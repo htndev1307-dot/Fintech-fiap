@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech FIAP</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Cabeçalho -->
+    <header class="bg-blue-900 text-white p-5 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Fintech FIAP</h1>
+
+            <nav>
+                <ul class="flex gap-5">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Transações</a></li>
+                    <li><a href="#">Relatórios</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container mx-auto p-6">
+
+        <h2 class="text-3xl font-bold mb-6">
+            Dashboard Financeiro
+        </h2>
+
+        <!-- Cards -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <div class="card-financeiro">
+                <h3>Saldo Atual</h3>
+                <p class="valor">R$ 12.500,00</p>
+            </div>
+
+            <div class="card-financeiro">
+                <h3>Receitas</h3>
+                <p class="valor">R$ 8.000,00</p>
+            </div>
+
+            <div class="card-financeiro">
+                <h3>Despesas</h3>
+                <p class="valor">R$ 3.500,00</p>
+            </div>
+
+        </section>
+
+        <!-- Tabela -->
+        <section class="mt-10">
+
+            <h2 class="text-2xl font-bold mb-4">
+                Últimas Transações
+            </h2>
+
+            <div class="overflow-x-auto">
+
+                <table class="w-full bg-white shadow-lg rounded-lg">
+
+                    <thead class="bg-blue-700 text-white">
+
+                        <tr>
+                            <th class="p-3">Data</th>
+                            <th class="p-3">Descrição</th>
+                            <th class="p-3">Valor</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td class="p-3">01/06/2026</td>
+                            <td class="p-3">Salário</td>
+                            <td class="p-3 text-green-600">
+                                + R$ 5.000
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="p-3">03/06/2026</td>
+                            <td class="p-3">Mercado</td>
+                            <td class="p-3 text-red-600">
+                                - R$ 350
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="p-3">07/06/2026</td>
+                            <td class="p-3">Internet</td>
+                            <td class="p-3 text-red-600">
+                                - R$ 120
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- Botão -->
+        <div class="mt-8 text-center">
+
+            <button class="bg-blue-700 hover:bg-blue-900 text-white px-6 py-3 rounded-lg">
+                Nova Transação
+            </button>
+
+        </div>
+
+    </main>
+
+</body>
+</html> 
